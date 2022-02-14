@@ -9,20 +9,29 @@
   flex-direction: column;
   gap: 1rem;
   overflow: hidden;
+  background-color: #0a0612;
 }
 
 #quote-box {
+  font-family: 'Comfortaa', cursive;
+  font-family: 'Dancing Script', cursive;
   width: 500px;
   padding: 3rem 4rem;
   border-radius: 1rem 5rem;
   background-color: #fff;
   transition: all 0.5s;
+  border-left: 10px solid #871f78;
+  border-right: 10px solid #871f78;
+  color: #871f78;
 }
 
 #quote-box:hover {
   transform: scale(1.08);
   border-radius: 5rem 1rem;
   margin-bottom: 2rem;
+  color: #ff1493;
+  border-left: 10px solid #ff1493;
+  border-right: 10px solid #ff1493;
 }
 
 #text {
@@ -38,22 +47,47 @@
   padding: 0;
 }
 
-#coder {
-  font-style: italic;
-  font-size: 1em;
+#tweet-quote {
+  color: inherit;
+  text-decoration: none;
 }
 
 #buttons-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: 1.2rem;
   margin-top: 1rem;
 }
 
-.tweet-and-add {
+.tweet-and-change {
+  background-color: #871f78;
   width: 40px;
+  height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 0.5s;
+  outline: none;
+  border: none;
+  border-radius: 50%;
+}
+
+#quote-box:hover .tweet-and-change {
+  background-color: #ff1493;
+}
+
+#quote-box:hover .tweet-and-change:hover {
+  background-color: #871f78;
+}
+
+i.fa {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+#coder {
+  font-style: italic;
+  font-size: 1em;
+  color: #fff;
 }
