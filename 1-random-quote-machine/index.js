@@ -1,6 +1,7 @@
 const textContainer = document.getElementById('text');
 const authorContainer = document.getElementById('author');
 const newQuoteButton = document.getElementById('new-quote');
+const tweetQuoteLink = document.getElementById('tweet-quote');
 
 async function fetchQuotes() {
   const response = await fetch(
@@ -33,3 +34,9 @@ function changeQuoteBoxContent() {
 changeQuoteBoxContent();
 
 newQuoteButton.addEventListener('click', () => changeQuoteBoxContent());
+tweetQuoteLink.addEventListener('click', () => {
+  const quoteCurrentContent = `"${textContainer.innerHTML}" ${authorContainer.innerHTML}`;
+  const finalTweetLink =
+    'https://twitter.com/intent/tweet?text=' + encodeURI(quoteCurrentContent);
+  tweetQuoteLink.href = finalTweetLink;
+});
