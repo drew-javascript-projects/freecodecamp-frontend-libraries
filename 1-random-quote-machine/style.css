@@ -20,9 +20,9 @@
   border-radius: 1rem 5rem;
   background-color: #fff;
   transition: all 0.5s;
-  border-left: 10px solid #871f78;
-  border-right: 10px solid #871f78;
-  color: #871f78;
+  border-left: 10px solid #0a0612;
+  border-right: 10px solid #0a0612;
+  color: #0a0612;
 }
 
 #quote-box:hover {
@@ -61,7 +61,7 @@
 }
 
 .tweet-and-change {
-  background-color: #871f78;
+  background-color: #0a0612;
   width: 40px;
   height: 40px;
   display: flex;
@@ -78,7 +78,7 @@
 }
 
 #quote-box:hover .tweet-and-change:hover {
-  background-color: #871f78;
+  background-color: #0a0612;
 }
 
 i.fa {
