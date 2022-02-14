@@ -21,8 +21,12 @@ async function fetchQuotes() {
 
 function changeQuoteBoxContent() {
   fetchQuotes().then((rsp) => {
-    textContainer.innerHTML = rsp.text;
-    authorContainer.innerHTML = '- ' + rsp.author;
+    if (rsp.text.length > 200) {
+      changeQuoteBoxContent();
+    } else {
+      textContainer.innerHTML = rsp.text;
+      authorContainer.innerHTML = '- ' + rsp.author;
+    }
   });
 }
 

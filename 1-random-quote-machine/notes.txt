@@ -1,6 +1,7 @@
 - Source for the description here: https://www.freecodecamp.org/learn/front-end-development-libraries/front-end-development-libraries-projects/build-a-random-quote-machine
 - Read readable stream: https://stackoverflow.com/questions/40385133/retrieve-data-from-a-readablestream-object
 - Font awesome icons: https://www.w3schools.com/icons/fontawesome_icons_directional.asp
+- Using async to fetch: https://www.javascripttutorial.net/javascript-fetch-api/
 
 - User Story #1: I can see a wrapper element with a corresponding id="quote-box". ✅
 - User Story #2: Within #quote-box, I can see an element with a corresponding id="text". ✅
